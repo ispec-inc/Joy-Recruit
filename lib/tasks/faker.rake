@@ -13,7 +13,7 @@ namespace :faker do
     puts "Companies Created"
 
     Company.all.each do |company|
-      100.times do
+      30.times do
         company.users.create!(
           name: Faker::Name.name,
           age: [*1..100].sample,
