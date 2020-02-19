@@ -1,6 +1,6 @@
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2020-02-19 23:22:16 +0900
+# Date: 2020-02-20 00:13:25 +0900
 # Seeding Company
 # Written with the command:
 #
@@ -16,6 +16,9 @@ Company.seed(:id,
   {"id"=>7, "name"=>"Schowalter Inc", "description"=>"Assimilated zero defect hierarchy", "address"=>"Suite 946 16767 Kevin Shore, South Bradford, CA 85879-6492", "website_url"=>"http://bernierdoyle.org/wes"},
   {"id"=>8, "name"=>"Wilkinson Group", "description"=>"Versatile global website", "address"=>"Apt. 391 8952 Jast Bypass, Schuppemouth, NM 12445", "website_url"=>"http://sauerjerde.name/dominique_lehner"},
   {"id"=>9, "name"=>"Labadie-Herzog", "description"=>"Front-line web-enabled hierarchy", "address"=>"738 Terry Lodge, Rashadfort, SC 32817-8710", "website_url"=>"http://prohaskagrant.org/robt"},
-  {"id"=>10, "name"=>"Steuber-Mills", "description"=>"Persistent cohesive core", "address"=>"Suite 578 1853 Waelchi Squares, East Winfredville, UT 75200", "website_url"=>"http://casper.co/valentina"}
+  {"id"=>10, "name"=>"Steuber-Mills", "description"=>"Persistent cohesive core", "address"=>"Suite 578 1853 Waelchi Squares, East Winfredville, UT 75200", "website_url"=>"http://casper.co/valentina"},
+  {"id"=>11, "name"=>"Barton, Wehner and Schamberger", "description"=>"Switchable cohesive leverage", "address"=>"57980 Hansen Heights, East Giovannifort, SC 29795-4898", "website_url"=>"http://lynch.co/dwight"},
+  {"id"=>12, "name"=>"Kuhlman-Hessel", "description"=>"Intuitive real-time application", "address"=>"Suite 412 916 Evie Station, West Jacquilineport, ND 67942", "website_url"=>"http://rice.co/dwight"},
+  {"id"=>13, "name"=>"Watsica, Greenfelder and Hills", "description"=>"Profit-focused grid-enabled toolset", "address"=>"Apt. 728 3962 Ernser Heights, Verdellmouth, NH 51645-1784", "website_url"=>"http://greenholt.name/samual"}
 )
 # End auto-generated file.

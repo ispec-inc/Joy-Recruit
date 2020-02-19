@@ -1,5 +1,6 @@
 class CompaniesController < ApplicationController
   def index
-    Company.all
+    companies = Company.all
+    render json: companies
   end
 end

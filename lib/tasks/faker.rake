@@ -1,7 +1,7 @@
 namespace :faker do
   desc "make dummy data"
   task create_dummy: :environment do
-    10.times do
+    3.times do
       Company.create!(
         name: Faker::Company.name,
         description: Faker::Company.catch_phrase,
@@ -10,30 +10,30 @@ namespace :faker do
       )
       print "."
     end
-    puts "10 companies created"
+    puts "Companies Created"
 
     Company.all.each do |company|
-      20.times do
+      100.times do
         company.users.create!(
           name: Faker::Name.name,
           age: [*1..100].sample,
         )
-        print "."
       end
+      print "."
     end
-    puts "20 users created for each companies"
+    puts "Users are created"
 
     User.all.each do |user|
-      30.times do
+      10.times do
         user.articles.create!(
           title: Faker::App.name,
           content: Faker::JapaneseMedia::OnePiece.quote,
           is_draft: Faker::Boolean.boolean(true_ratio: 0.3),
         )
-        print "."
       end
+      print "."
     end
-    puts "30 atricles created for each users"
+    puts "Atricles are created"
 
   end
 end
