@@ -3,10 +3,12 @@ class CompaniesController < ApplicationController
     Company.all
   end
 
-  def all_users
+  def all_user_names
     all_users = []
     Company.all.each do |company|
-      all_users << company.users.name
+      company.users.each do |user|
+        user.name
+      end
     end
 
     all_users
