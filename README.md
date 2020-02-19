@@ -4,7 +4,7 @@ Welcome to ispec!
 ### Usage
 ```
 # To initialize data
-bundle exec rails db:create db:migrate db:seed_fu
+bundle install && bundle exec rails db:create db:migrate db:seed_fu
 
 # To start server
 bundle exec rails server
@@ -22,3 +22,5 @@ mysql2 '0.5.3'
 GET /companies/:company_id/articles(.:format)
 GET /companies(.:format)                                                                     
 ```
+
+Enjoy Your Engineering LIFE!
