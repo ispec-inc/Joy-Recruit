@@ -1,8 +1,6 @@
 class ArticlesController < ApplicationController
   def index
-    id = params[:company_id] || 1
-    company = Company.find_by(id: id)
-    raise StandardError.new("run `bundle exec rails db:seed_fu`") if company.nil?
+    company = Company.find(params[:company_id])
 
     all_articles = []
     company.users.each do |user|
