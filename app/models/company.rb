@@ -12,7 +12,7 @@
 #
 
 class Company < ApplicationRecord
-  has_many :companies
+  has_many :users
 
   def details
     "This company is #{name}"
