@@ -14,4 +14,10 @@
 #
 
 class Place < ApplicationRecord
+  def details
+    {
+      address: address,
+      description: description,
+    }
+  end
 end
