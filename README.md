@@ -1,2 +1,2 @@
 # Joy-Recruit
-Welcome to Ispec!
+Welcome to ispec!
