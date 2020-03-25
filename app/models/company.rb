@@ -14,6 +14,10 @@
 class Company < ApplicationRecord
   has_many :users
 
+  def articles
+    Article.joins(user: :company).published.merge(Company.where(id: self))
+  end
+
   def details
     "This company is #{name}"
   end
