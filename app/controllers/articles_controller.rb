@@ -9,8 +9,7 @@ class ArticlesController < ApplicationController
   private
 
   def set_company
-    @company = Company.find(company_params[:company_id])
-    @users = User.user_list(@company.id) if @company.present?
+    @users = User.user_list(company_params[:company_id])
   end
 
   ## 指定した要素以外のパラメータを受け付けない
