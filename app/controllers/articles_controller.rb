@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_company, only: [:index]
+  before_action :set_users, only: [:index]
 
   def index
     all_articles = Article.article_list(@users.ids).published
@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
 
   private
 
-  def set_company
+  def set_users
     @users = User.user_list(company_params[:company_id])
   end
 
