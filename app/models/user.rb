@@ -15,7 +15,7 @@ class User < ApplicationRecord
   has_many :articles
 
   # 指定したcompanyに属するユーザー一覧
-  scope :user_list, -> (company_id) {
+  scope :employee, -> (company_id: nil) {
     where(company_id: company_id)
   }
 

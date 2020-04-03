@@ -9,7 +9,7 @@ class ArticlesController < ApplicationController
   private
 
   def set_users
-    @users = User.user_list(company_params[:company_id])
+    @users = User.employee(company_id: company_params[:company_id])
   end
 
   ## 指定した要素以外のパラメータを受け付けない
