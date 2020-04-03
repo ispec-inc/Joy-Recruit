@@ -15,7 +15,9 @@ class Article < ApplicationRecord
   belongs_to :user
 
   # 公開済みの記事一覧を渡す
-  scope :published, -> { where(is_draft: false) }
+  scope :published, -> {
+    where(is_draft: false)
+  }
 
   # 指定したユーザーの記事一覧
   scope :article_list, -> (user_id) {
