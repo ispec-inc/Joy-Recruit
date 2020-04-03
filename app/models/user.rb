@@ -16,7 +16,7 @@ class User < ApplicationRecord
 
   # 指定したcompanyに属するユーザー一覧
   scope :employee, -> (company_id: nil) {
-    where(company_id: company_id)
+    where(company_id: company_id) if company_id.present?
   }
 
 end

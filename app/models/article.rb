@@ -21,6 +21,6 @@ class Article < ApplicationRecord
 
   # 指定したユーザーの記事一覧
   scope :article_list, -> (user_id) {
-    where(user_id: user_id)
+    where(user_id: user_id) if user_id.present?
   }
 end
