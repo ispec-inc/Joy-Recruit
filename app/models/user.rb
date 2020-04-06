@@ -13,10 +13,4 @@
 class User < ApplicationRecord
   belongs_to :company
   has_many :articles
-
-  # 指定したcompanyに属するユーザー一覧
-  scope :employee, -> (company_id: nil) {
-    where(company_id: company_id) if company_id.present?
-  }
-
 end

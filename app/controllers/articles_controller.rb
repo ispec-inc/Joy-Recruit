@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :set_users, only: [:index]
+  before_action :set_company, only: [:index]
 
   def index
     all_articles = Article.article_list(@users.ids).published
@@ -8,8 +8,8 @@ class ArticlesController < ApplicationController
 
   private
 
-  def set_users
-    @users = User.employee(company_id: request_params[:company_id])
+  def set_company
+    @users = Company.find(company_params[:company_id]).users
   end
 
   ## 指定した要素以外のパラメータを受け付けない
